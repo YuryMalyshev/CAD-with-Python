@@ -1,0 +1,22 @@
+[
+	{
+	"gname":"1",
+	"vertices":
+		[
+		{"vname":"1","destinations":[{"dname":"R1"}]},
+		{"vname":"2","destinations":[{"dname":"R1"}]},
+		{"vname":"R1","destinations":[{"dname":"1"},{"dname":"2"}]},
+		{"vname":"R2","destinations":[{"dname":"3"}]},
+		{"vname":"3","destinations":[{"dname":"R2"}]}
+		]
+	},
+	{
+	"gname":"2",
+	"vertices":
+		[
+		{"vname":"R2","destinations":[{"dname":"1G1","ename":"2"}]},
+		{"vname":"1G1","destinations":[{"dname":"R2","ename":"2"},{"dname":"R1","ename":"1"}]},
+		{"vname":"R1","destinations":[{"dname":"1G1","ename":"1"}]}		
+		]
+	}
+]

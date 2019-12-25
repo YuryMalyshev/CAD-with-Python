@@ -1,0 +1,29 @@
+[
+	{
+	"gname":"G1",
+	"vertices":
+		[
+		{"vname":"1","destinations":[{"dname":"R1"}]},
+		{"vname":"2","destinations":[{"dname":"R1"}]},
+		{"vname":"R1","destinations":[{"dname":"1"},{"dname":"2"}]}
+		]
+	},
+	{
+	"gname":"G2",
+	"vertices":
+		[
+		{"vname":"1","destinations":[{"dname":"R3"}]},
+		{"vname":"1G1","destinations":[{"dname":"R2","ename":"1"},{"dname":"R3","ename":"2"}]},
+		{"vname":"R2","destinations":[{"dname":"1G1","ename":"1"}]},
+		{"vname":"R3","destinations":[{"dname":"1G1","ename":"2"},{"dname":"1"}]}
+		]
+	},
+	{
+	"gname":"G3",
+	"vertices":
+		[
+		{"vname":"1G2","destinations":[{"dname":"R1","ename":"1"}]},
+		{"vname":"R1","destinations":[{"dname":"1G2","ename":"1"}]}
+		]
+	}
+]

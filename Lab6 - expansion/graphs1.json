@@ -1,0 +1,29 @@
+[
+	{
+	"gname":"1",
+	"vertices":
+		[
+		{"vname":"1","typ":"pin","destinations":[{"dname":"01"}]},
+		{"vname":"2","typ":"pin","destinations":[{"dname":"01"}]},
+		{"vname":"01","typ":"vertex","destinations":[{"dname":"1"},{"dname":"2"}]}
+		]
+	},
+	{
+	"gname":"2",
+	"vertices":
+		[
+		{"vname":"1","typ":"pin","destinations":[{"dname":"03"}]},
+		{"vname":"11","typ":"nonT","destinations":[{"dname":"02","ename":"1"},{"dname":"03","ename":"2"}]},
+		{"vname":"02","typ":"vertex","destinations":[{"dname":"11","ename":"1"}]},
+		{"vname":"03","typ":"vertex","destinations":[{"dname":"11","ename":"2"},{"dname":"1"}]}
+		]
+	},
+	{
+	"gname":"3",
+	"vertices":
+		[
+		{"vname":"21","typ":"nonT","destinations":[{"dname":"01","ename":"1"}]},
+		{"vname":"01","typ":"vertex","destinations":[{"dname":"21","ename":"1"}]}
+		]
+	}
+]
